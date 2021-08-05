@@ -10,7 +10,6 @@ function Modal({ onClose, modalImg, modalAlt }) {
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
         onClose();
-        console.log('ESC!!!!');
       }
     };
 
@@ -38,6 +37,8 @@ function Modal({ onClose, modalImg, modalAlt }) {
 
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
+  modalImg: PropTypes.string.isRequired,
+  modalAlt: PropTypes.string.isRequired,
 };
 
 export default Modal;
